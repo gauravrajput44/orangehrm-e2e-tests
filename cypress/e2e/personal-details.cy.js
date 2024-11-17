@@ -38,7 +38,7 @@ describe('Personal Details Page Tests', () => {
         })
     })
 
-    it.only('User can update personal details like first name and last name', () => {
+    it('User can update personal details like first name and last name', () => {
         PersonalDetailsMocks.mockUpdatePersonalDetails()
         cy.updateFirstNameAndLastNameDetails(NewFirstName, NewLastName)
 

@@ -1,0 +1,37 @@
+{
+  "data": [
+      {
+          "id": 22,
+          "post": {
+              "id": 20
+          },
+          "type": "text",
+          "liked": false,
+          "text": "hello123",
+          "employee": {
+              "empNumber": 7,
+              "lastName": "lname173178",
+              "firstName": "fname173178",
+              "middleName": "mname173178",
+              "employeeId": "mussss",
+              "terminationId": null
+          },
+          "stats": {
+              "numOfLikes": 1,
+              "numOfComments": 1,
+              "numOfShares": 1
+          },
+          "createdDate": "2024-11-16",
+          "createdTime": "19:10",
+          "originalPost": null,
+          "permission": {
+              "canUpdate": true,
+              "canDelete": true
+          }
+      }
+  ],
+  "meta": {
+      "total": 1
+  },
+  "rels": []
+}

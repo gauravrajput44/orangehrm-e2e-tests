@@ -8,6 +8,9 @@
     "cy:run": "cypress run",
     "test:login": "cypress run --headed --spec 'cypress/e2e/login.cy.js'",
     "test:personal": "cypress run --headed --spec 'cypress/e2e/personal-details.cy.js'",
+    "test:buzz": "cypress run --headed --spec 'cypress/e2e/buzz-feed.cy.js'",
+    "test:all": "cypress run --spec 'cypress/e2e/*.cy.js'",
+    "test:all:headed": "cypress run --headed --spec 'cypress/e2e/*.cy.js'",
     "report:generate": "mochawesome-merge cypress/reports/*.json > cypress/reports/full_report.json && marge cypress/reports/full_report.json -f report -o cypress/reports --inline",
     "clean:reports": "rm -rf cypress/reports/* || true"
   },

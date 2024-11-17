@@ -1,0 +1,37 @@
+{
+    "data": [
+        {
+            "id": 14,
+            "post": {
+                "id": 12
+            },
+            "type": "text",
+            "liked": false,
+            "text": "Amazing thing",
+            "employee": {
+                "empNumber": 7,
+                "lastName": "user",
+                "firstName": "Gaurav",
+                "middleName": "Test",
+                "employeeId": "Kumar",
+                "terminationId": null
+            },
+            "stats": {
+                "numOfLikes": 0,
+                "numOfComments": 0,
+                "numOfShares": 0
+            },
+            "createdDate": "2024-11-16",
+            "createdTime": "20:07",
+            "originalPost": null,
+            "permission": {
+                "canUpdate": true,
+                "canDelete": true
+            }
+        }
+    ],
+    "meta": {
+        "total": 1
+    },
+    "rels": []
+}

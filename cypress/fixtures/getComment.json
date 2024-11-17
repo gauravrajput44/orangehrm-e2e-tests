@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "comment": {
+                "id": 20,
+                "text": "Hello1234356",
+                "numOfLikes": 0,
+                "liked": false,
+                "createdDate": "2024-11-16",
+                "createdTime": "19:57"
+            },
+            "share": {
+                "id": 27
+            },
+            "employee": {
+                "empNumber": 7,
+                "lastName": "lname173178",
+                "firstName": "fname173178",
+                "middleName": "mname173178",
+                "employeeId": "mussss",
+                "terminationId": null
+            },
+            "permission": {
+                "canUpdate": true,
+                "canDelete": true
+            }
+        }
+    ],
+    "meta": {
+        "total": 1
+    },
+    "rels": []
+}
