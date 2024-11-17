@@ -1,0 +1,17 @@
+{
+    "name": "orangehrm-cypress-tests",
+    "version": "1.0.0",
+    "description": "Cypress Test Framework for Orange HRM",
+    "main": "",
+    "scripts": {
+      "cy:open": "cypress open",
+      "cy:run": "cypress run",
+      "test:login": "cypress run --headed --spec 'cypress/e2e/login.cy.js'"
+    },
+    "author": "Gaurav Kumar",
+    "license": "UNLICENSED",
+    "devDependencies": {
+      "cypress": "^13.6.0"
+    },
+    "dependencies": {}
+  }
