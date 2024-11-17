@@ -13,7 +13,7 @@ describe('Buzz Feed Page Tests', () => {
     })
 
 
-    it('User can see count for like, share and comment, like count is creased when liking a feed', () => {
+    it('User can see count for like, share and comment, like count is increased when liking a feed', () => {
         BuzzFeedMocks.mockLikePost();
         cy.getLikesCount().then(likesCount => {
             expect(likesCount, 'Feed should have exactly 1 like').to.equal(1)
