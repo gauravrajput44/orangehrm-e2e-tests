@@ -1,17 +1,23 @@
 {
-    "name": "orangehrm-cypress-tests",
-    "version": "1.0.0",
-    "description": "Cypress Test Framework for Orange HRM",
-    "main": "",
-    "scripts": {
-      "cy:open": "cypress open",
-      "cy:run": "cypress run",
-      "test:login": "cypress run --headed --spec 'cypress/e2e/login.cy.js'"
-    },
-    "author": "Gaurav Kumar",
-    "license": "UNLICENSED",
-    "devDependencies": {
-      "cypress": "^13.6.0"
-    },
-    "dependencies": {}
-  }
+  "name": "orangehrm-cypress-tests",
+  "version": "1.0.0",
+  "description": "Cypress Test Framework for Orange HRM",
+  "main": "",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:login": "cypress run --headed --spec 'cypress/e2e/login.cy.js'",
+    "report:generate": "mochawesome-merge cypress/reports/*.json > cypress/reports/full_report.json && marge cypress/reports/full_report.json -f report -o cypress/reports --inline",
+    "clean:reports": "rm -rf cypress/reports/* || true"
+  },
+  "author": "Gaurav Kumar",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "cypress": "^13.6.0",
+    "cypress-multi-reporters": "^1.6.4",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {}
+}
