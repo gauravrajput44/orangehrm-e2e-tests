@@ -1,5 +1,6 @@
 // Import commands.js using ES2015 syntax:
 import './commands/login.commands'
+import './commands/personal.commands'
 
 // Prevent uncaught exception failures
 Cypress.on('uncaught:exception', (err, runnable) => {

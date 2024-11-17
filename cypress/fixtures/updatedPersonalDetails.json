@@ -1,0 +1,22 @@
+{
+  "data": {
+    "empNumber": 7,
+    "lastName": "NewLastName",
+    "firstName": "NewFirstName",
+    "middleName": "Middle",
+    "employeeId": "1234567",
+    "otherId": "7654321",
+    "drivingLicenseNo": "DL123",
+    "drivingLicenseExpiredDate": "2029-01-01",
+    "gender": 1,
+    "maritalStatus": "Married",
+    "birthday": "1988-01-01",
+    "terminationId": null,
+    "nationality": {
+      "id": 41,
+      "name": "Colombian"
+    }
+  },
+  "meta": [],
+  "rels": []
+}
