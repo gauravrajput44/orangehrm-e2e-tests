@@ -1,6 +1,6 @@
 import { BUZZ_SELECTORS } from '../support/selectors/buzz-feed.selectors'
 import { BuzzFeedMocks } from '../support/mocks/buzz-feeds.mocks'
-
+import { verifyFailureToastMessage } from '../support/helpers/expect.helpers'
 describe('Buzz Feed Page Tests', () => {
     beforeEach(() => {
         cy.fixture('userCredentials').then((userData) => {
@@ -56,8 +56,7 @@ describe('Buzz Feed Page Tests', () => {
             .click()
         cy.wait('@likePost')
 
-        // TODO: verify failure message
-        // verifyFailureToastMessage({})
+        verifyFailureToastMessage({})
     })
 
     it('User can post a comment on a feed', () => {

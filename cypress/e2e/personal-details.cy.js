@@ -1,5 +1,6 @@
 import { PersonalDetailsMocks } from '../support/mocks/personal-details.mocks'
 import { PERSONAL_SELECTORS } from '../support/selectors/personal.selectors'
+import { verifyFailureToastMessage } from '../support/helpers/expect.helpers'
 
 const NewFirstName = 'NewFirstName'
 const NewLastName = 'NewLastName'
@@ -57,7 +58,7 @@ describe('Personal Details Page Tests', () => {
         })
     })
 
-    it('The user can verify that no API request is triggered on clicking the Save button if the mandatory field First Name is empty', () => {
+    it('User can verify that no API request is triggered on clicking the Save button if the mandatory field First Name is empty', () => {
         PersonalDetailsMocks.mockUpdatePersonalDetails()
 
         cy.get(PERSONAL_SELECTORS.inputs.firstName)
@@ -76,16 +77,15 @@ describe('Personal Details Page Tests', () => {
 
         cy.updateFirstNameAndLastNameDetails(NewFirstName, NewLastName)
         cy.wait('@updatePersonalDetailsError')
-        // TODO: verify failure message
-       // verifyFailureToastMessage({})
+
+       verifyFailureToastMessage({})
     })
 
     it('User can see error message when personal details API request timed out', () => {
         PersonalDetailsMocks.mockNetworkTimeout()
-
         cy.updateFirstNameAndLastNameDetails(NewFirstName, NewLastName)
         cy.wait('@networkError')
-        // TODO: verify failure message
-        // verifyFailureToastMessage({})
+
+        verifyFailureToastMessage({})
     })
 })

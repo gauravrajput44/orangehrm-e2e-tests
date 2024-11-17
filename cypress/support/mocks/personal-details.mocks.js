@@ -24,7 +24,10 @@ export class PersonalDetailsMocks {
 
   static mockNetworkTimeout(empNumber = '7') {
     cy.intercept('PUT', `${this.URL_STRING}/${empNumber}/personal-details`, {
-      forceNetworkError: true
+      statusCode: 504,
+      body: {
+          error: 'Gateway Timeout'
+      }
     }).as('networkError')
   }
 }
