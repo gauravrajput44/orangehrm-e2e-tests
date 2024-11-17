@@ -1,4 +1,4 @@
-const { defineConfig } = require("cypress");
+const { defineConfig } = require("cypress")
 
 module.exports = defineConfig({
   e2e: {
@@ -17,4 +17,4 @@ module.exports = defineConfig({
     viewportWidth: 1280,
     viewportHeight: 720
   },
-});
+})

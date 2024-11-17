@@ -78,7 +78,7 @@ describe('Personal Details Page Tests', () => {
         cy.updateFirstNameAndLastNameDetails(NewFirstName, NewLastName)
         cy.wait('@updatePersonalDetailsError')
 
-       verifyFailureToastMessage({})
+        verifyFailureToastMessage({})
     })
 
     it('User can see error message when personal details API request timed out', () => {

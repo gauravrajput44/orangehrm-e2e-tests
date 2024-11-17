@@ -4,4 +4,4 @@ export const TOAST_MESSAGE_SELECTORS = {
         title: '.oxd-text.oxd-text--p.oxd-text--toast-title.oxd-toast-content-text',
         message: '.oxd-text.oxd-text--p.oxd-text--toast-message.oxd-toast-content-text'
     }
-};
+}

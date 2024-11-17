@@ -16,11 +16,11 @@ export class BuzzFeedMocks {
     const {
       statusCode = 200,
       response = { success: true }
-    } = options;
+    } = options
     cy.intercept('POST', '**/web/index.php/api/v2/buzz/shares/*/likes', {
       statusCode,
       body: response
-    }).as('likePost');
+    }).as('likePost')
   }
 
   static mockPostComment() {
@@ -31,8 +31,8 @@ export class BuzzFeedMocks {
         body: {
           success: true
         }
-      });
-    }).as('postComment');
+      })
+    }).as('postComment')
   }
 
   static mockGetComment() {
@@ -50,7 +50,7 @@ export class BuzzFeedMocks {
         body: {
           success: true
         }
-      });
-    }).as('postFeed');
+      })
+    }).as('postFeed')
   }
 }

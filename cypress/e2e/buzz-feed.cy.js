@@ -1,6 +1,7 @@
 import { BUZZ_SELECTORS } from '../support/selectors/buzz-feed.selectors'
 import { BuzzFeedMocks } from '../support/mocks/buzz-feeds.mocks'
 import { verifyFailureToastMessage } from '../support/helpers/expect.helpers'
+
 describe('Buzz Feed Page Tests', () => {
     beforeEach(() => {
         cy.fixture('userCredentials').then((userData) => {

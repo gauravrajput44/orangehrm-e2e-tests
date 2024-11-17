@@ -20,4 +20,4 @@ export const BUZZ_SELECTORS = {
             share: '.orangehrm-buzz-stats-row:last-child .orangehrm-buzz-stats-active:nth-child(2)'
         }
     },
-};
+}

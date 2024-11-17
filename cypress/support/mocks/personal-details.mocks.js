@@ -26,7 +26,7 @@ export class PersonalDetailsMocks {
     cy.intercept('PUT', `${this.URL_STRING}/${empNumber}/personal-details`, {
       statusCode: 504,
       body: {
-          error: 'Gateway Timeout'
+        error: 'Gateway Timeout'
       }
     }).as('networkError')
   }

@@ -6,21 +6,16 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-
     "test:login": "cypress run --headed --spec 'cypress/e2e/login.cy.js'",
     "test:personal": "cypress run --headed --spec 'cypress/e2e/personal-details.cy.js'",
     "test:buzz": "cypress run --headed --spec 'cypress/e2e/buzz-feed.cy.js'",
-
     "test:all": "cypress run --spec 'cypress/e2e/*.cy.js'",
     "test:all:headed": "cypress run --headed --spec 'cypress/e2e/*.cy.js'",
-
     "test:chrome": "cypress run --browser chrome",
     "test:firefox": "cypress run --browser firefox",
-
     "test:chrome:headed": "cypress run --browser chrome --headed",
     "test:firefox:headed": "cypress run --browser firefox --headed",
     "test:all-browsers": "npm run test:chrome && npm run test:firefox",
-
     "report:generate": "mochawesome-merge cypress/reports/*.json > cypress/reports/full_report.json && marge cypress/reports/full_report.json -f report -o cypress/reports --inline",
     "clean:reports": "rm -rf cypress/reports/* || true"
   },

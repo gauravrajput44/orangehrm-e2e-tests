@@ -1,7 +1,7 @@
 import { PERSONAL_SELECTORS } from '../selectors/personal.selectors'
 
 Cypress.Commands.add('navigateToMyInfo', () => {
-  cy.get(PERSONAL_SELECTORS.myInfo).click();
+  cy.get(PERSONAL_SELECTORS.myInfo).click()
   cy.get(PERSONAL_SELECTORS.form).should('be.visible')
 })
 

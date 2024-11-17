@@ -1,4 +1,4 @@
-import { LOGIN_SELECTORS } from '../support/selectors/login.selectors';
+import { LOGIN_SELECTORS } from '../support/selectors/login.selectors'
 
 describe('Login Page Tests', () => {
   beforeEach(() => {
@@ -9,7 +9,7 @@ describe('Login Page Tests', () => {
     cy.fixture('userCredentials').then((userData) => {
       cy.login(userData.validUser.username, userData.validUser.password)
 
-      cy.url().should('include', '/dashboard');
+      cy.url().should('include', '/dashboard')
       cy.get(LOGIN_SELECTORS.validation.userDropdownName)
         .then($element => {
           expect($element, 'User dropdown should be visible').to.be.visible
@@ -32,22 +32,22 @@ describe('Login Page Tests', () => {
 
   it('User can logout successfully', () => {
     cy.fixture('userCredentials').then((userData) => {
-      cy.login(userData.validUser.username, userData.validUser.password);
-      cy.url().should('include', '/dashboard');
+      cy.login(userData.validUser.username, userData.validUser.password)
+      cy.url().should('include', '/dashboard')
 
-      cy.logout();
+      cy.logout()
 
       cy.url().should('include', '/auth/login')
       cy.get(LOGIN_SELECTORS.loginForm)
         .then($form => {
           expect($form, 'Login form should be visible').to.be.visible
-        });
+        })
 
       cy.get(LOGIN_SELECTORS.validation.userDropdownName)
         .should('not.exist')
         .then($element => {
           expect($element, 'User dropdown should not exist').to.not.exist
         })
-    });
-  });
-});
+    })
+  })
+})
